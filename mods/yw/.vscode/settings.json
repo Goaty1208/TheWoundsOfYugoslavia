@@ -1,0 +1,9 @@
+{
+    "Lua.workspace.library": [
+        "c:\\Users\\Utente\\.vscode\\extensions\\openra.vscode-openra-lua-2.0.0\\api\\dev",
+        "c:\\Users\\Utente\\AppData\\Roaming\\Code\\User\\workspaceStorage\\40e6639a607fd01af99795fc2bb1429c\\openra.vscode-openra-lua\\map"
+    ],
+    "Lua.diagnostics.groupFileStatus": {
+        "global": "Opened"
+    }
+}
