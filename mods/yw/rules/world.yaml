@@ -106,12 +106,12 @@
 		InternalName: serbs
 		Side: Serbs
 		Selectable: False
-	Faction@7:
+	Faction@2:
 		Name: Republic of Bosnia Herzegovina
 		InternalName: rbih
 		Side: Bosniaks
 		Description: WIP \nSpecial Ability: WIP\nSpecial Unit: Mujahadeen
-	Faction@8:
+	Faction@3:
 		Name: Republika Srpska
 		InternalName: srpska
 		Side: Serbs
@@ -131,7 +131,7 @@
 	Faction@randomserbs:
 		Name: Serbs
 		InternalName: RandomSerbs
-		RandomFactionMembers: srpska #russia, ukraine
+		RandomFactionMembers: srpska #,russia, ukraine
 		Side: Random
 		Description: Random Serbs Country\nA random Serbs country will be chosen when the game starts.
 	ResourceRenderer:

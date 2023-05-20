@@ -174,6 +174,19 @@ jeep:
 		Facings: 8
 	icon: jeepicon
 
+yugo: 	#Listen, I am not good at art. Get temp art'd
+	idle:
+		Facings: 1
+		UseClassicFacings: false #you will change son (maybe)
+	turret:
+		Start: 0
+		Facings: 1
+		UseClassicFacings: false
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	icon: yugoicon
+
 apc:
 	idle:
 		Facings: 32

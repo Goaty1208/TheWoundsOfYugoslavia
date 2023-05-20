@@ -275,7 +275,7 @@ SYRD:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 40
-		Prerequisites: anypower, ~structures.bosniaks, ~techlevel.low
+		Prerequisites: anypower, ~structures.bosniaks, ~structures.serbs, ~techlevel.low
 		Description: Produces and repairs\nships and transports.
 	Valued:
 		Cost: 1000
@@ -1163,7 +1163,7 @@ FACT:
 		Factions: germany
 		Prerequisite: structures.germany
 	ProvidesPrerequisite@serbs:
-		Factions: serbs, russia, ukraine
+		Factions: srpska, russia, ukraine
 		Prerequisite: structures.serbs
 	ProvidesPrerequisite@serbsvanilla:
 		Factions: serbs
