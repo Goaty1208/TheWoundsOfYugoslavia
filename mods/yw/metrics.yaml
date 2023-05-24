@@ -12,7 +12,6 @@ Metrics:
 	FactionSuffix-soviet: soviet
 	FactionSuffix-ukraine: soviet
 	FactionSuffix-rbih: bosniaks
-        FactionSuffix-srpska: serbs
 	IncompatibleProtectedGameColor: B22222
 	IncompatibleVersionColor: D3D3D3
 	TextfieldColorHighlight: 562020
