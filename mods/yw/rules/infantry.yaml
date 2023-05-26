@@ -110,6 +110,28 @@ MIL:
 		Types: Veterancy
 		Prerequisites: barracks.upgraded
 
+MUJ:
+	Inherits: MIL
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 10
+		Prerequisites: ~barracks, ~techlevel.infonly, ~infantry.rbih
+		Description: Muslim soldier.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
+	Valued:
+		Cost: 75
+	Tooltip:
+		Name: Mujahadeen
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
+	Armament@PRIMARY:
+		Weapon: RPG7
+	Armament@GARRISONED:
+		Name: garrisoned
+		Weapon: M1Carbine
+		MuzzleSequence: garrison-muzzle
+
 E1:
 	Inherits: ^Soldier
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
@@ -228,7 +250,7 @@ E3:
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
-		HP: 4500
+		HP: 3500
 	Armament@PRIMARY:
 		Weapon: RedEye
 		LocalOffset: 0,0,555
@@ -278,7 +300,7 @@ E4:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 70
-		Prerequisites: ~barr, ftur, ~techlevel.low
+		Prerequisites: ~barr, ftur, ~techlevel.low, disabled
 		Description: Advanced anti-structure unit.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 300
@@ -369,7 +391,7 @@ SPY:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 90
-		Prerequisites: ~!infantry.england, dome, ~tent, ~techlevel.medium
+		Prerequisites: ~!infantry.england, dome, ~tent, ~techlevel.medium, disabled
 		Description: Infiltrates enemy structures for intel or\nsabotage. Exact effect depends on the\nbuilding infiltrated.\nLoses disguise when attacking.\nCan detect spies.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft\n  Special Ability: Disguised
 	Valued:
 		Cost: 500
@@ -426,7 +448,7 @@ SPY:
 SPY.England:
 	Inherits: SPY
 	Buildable:
-		Prerequisites: ~infantry.england, dome, ~tent, ~techlevel.medium
+		Prerequisites: ~infantry.england, dome, ~tent, ~techlevel.medium, disabled
 	Valued:
 		Cost: 250
 	GivesExperience:
@@ -443,7 +465,7 @@ E7:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 120
-		Prerequisites: ~tent, atek, ~techlevel.high
+		Prerequisites: ~tent, atek, ~techlevel.high, disabled
 		BuildLimit: 1
 		Description: Elite commando infantry. Armed with\ndual pistols and C4.\nMaximum 1 can be trained.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\n  Special Ability: Destroy Building with C4
 	Valued:
@@ -506,7 +528,7 @@ MEDI:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 40
-		Prerequisites: ~tent, ~techlevel.infonly
+		Prerequisites: ~tent, ~techlevel.infonly, ~barracks
 		Description: Heals nearby infantry.\n  Unarmed
 	Valued:
 		Cost: 200
@@ -726,7 +748,7 @@ SHOK:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 130
-		Prerequisites: ~barr, stek, tsla, ~infantry.russia, ~techlevel.high
+		Prerequisites: ~barr, stek, tsla, ~infantry.russia, ~techlevel.high, disabled
 		Description: Elite infantry with portable Tesla coils.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 	Valued:
 		Cost: 350

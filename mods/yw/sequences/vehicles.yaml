@@ -177,7 +177,7 @@ jeep:
 yugo: 	#Listen, I am not good at art. Get temp art'd
 	idle:
 		Facings: 1
-		UseClassicFacings: false #you will change son (maybe)
+		UseClassicFacings: false #you will change soon (maybe)
 	turret:
 		Start: 0
 		Facings: 1
