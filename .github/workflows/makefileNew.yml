@@ -19,10 +19,10 @@ jobs:
     
     - name: configure
       run: git update-index --chmod=+x ./packaging/package-all.sh
-          git update-index --chmod=+x fetch-engine.sh
-          git update-index --chmod=+x launch-dedicated.sh.sh
-          git update-index --chmod=+x launch-game.sh
-          git update-index --chmod=+x utility.sh
+          git update-index --chmod=+x ./fetch-engine.sh
+          git update-index --chmod=+x ./launch-dedicated.sh.sh
+          git update-index --chmod=+x ./launch-game.sh
+          git update-index --chmod=+x ./utility.sh
 
     - name: Install dependencies
       run: make ./packaging/package-all.sh
