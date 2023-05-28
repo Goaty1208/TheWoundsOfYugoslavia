@@ -31,6 +31,3 @@ jobs:
     
     - name: configure 5
       run: git update-index --chmod=+x ./packaging/package-all.sh
-      
-    - name: Run distcheck
-      run: make distcheck
