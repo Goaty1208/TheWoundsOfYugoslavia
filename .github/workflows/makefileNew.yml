@@ -21,13 +21,10 @@ jobs:
       run: git update-index --chmod=+x ./packaging/package-all.sh
 
     - name: Install dependencies
-      run: make
+      run: make ./packaging/package-all.sh
 
     - name: Run check
       run: make check
-    
-    - name: test
-      run: ./packaging/package-all.sh
-    
+      
     - name: Run distcheck
       run: make distcheck
